@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bank-employees",
+      "handler": "bank-employee.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bank-employees/count",
+      "handler": "bank-employee.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bank-employees/:id",
+      "handler": "bank-employee.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bank-employees",
+      "handler": "bank-employee.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bank-employees/:id",
+      "handler": "bank-employee.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bank-employees/:id",
+      "handler": "bank-employee.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bank_employees",
+  "info": {
+    "name": "BankEmployee"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "surname": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "role": {
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "email": {
+      "type": "email"
+    },
+    "uid": {
+      "type": "uid"
+    }
+  }
+}
